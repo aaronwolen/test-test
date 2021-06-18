@@ -26,9 +26,8 @@ jobs:
         uses: docker/metadata-action@v3
         with:
           images: aaronwolen/test-test
-          tags: |
-            # branch event
-            type=ref,event=branch,value=latest
+          flavor: |
+            latest=true
       -
         name: Login to DockerHub
         if: github.event_name != 'pull_request'
