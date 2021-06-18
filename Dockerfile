@@ -13,6 +13,7 @@ RUN mamba install -c conda-forge --quiet --yes \
   'bash_kernel' \
   'r-shiny' \
   'r-irkernel' \
+  'r-callr' \
   'r-pingr' \
   && mamba clean --all -f -y
 
